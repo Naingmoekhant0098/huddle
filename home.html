@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>huddle landing page</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="aos-master/dist/aos.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+      body {
+        font-family: Poppins, sans-serif;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        position: fixed;
+        top: 0;
+      }
+      .navBar .navtitle {
+        display: flex;
+        align-items: center;
+      }
+      .footerHeader{
+        display: flex;
+        align-items: center;
+
+      }
+      .footerHeader img{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+
+      }
+      .navBar .navtitle img {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+      }
+      .navtitle h1 , .footerHeader h1 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      .navButton button {
+        outline: 0;
+        border: 1.5px solid rgb(233, 25, 157);
+        border-radius: 30px;
+        font-size: 12px;
+        padding: 5px 20px;
+        color: rgb(233, 25, 157);
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        opacity: 0.7;
+      }
+      .navButton button:hover {
+        background-color: rgb(233, 25, 157);
+        color: #fff;
+        opacity: 1;
+      }
+      .header {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .header .header-contact p {
+        font-size: 13px;
+        font-weight: 700;
+        width: 45%;
+        margin: 0 auto;
+        line-height: 20px;
+        opacity: 0.7;
+      }
+      .header .header-contact h3 {
+        font-weight: 700;
+        font-size: 35px;
+      }
+      .header .header-contact button {
+        font-size: 11px;
+        font-weight: 700;
+        border: none;
+        outline: 0;
+        padding: 10px 40px;
+        background-color: rgb(233, 25, 157);
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .header-contact button:hover {
+        opacity: 0.6;
+      }
+      .headerImage img {
+        width: 100%;
+        height: 90%;
+        margin: 0 auto;
+      }
+      .headerImage {
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+      .SecondContain {
+        width: 60%;
+        display: flex;
+        height: 20vh;
+        align-items: center;
+         
+        justify-content: space-around;
+      }
+       .icon img {
+        width: 25px;
+      }
+       .nums {
+        font-size: 40px;
+        font-weight: 700;
+      }
+       .text {
+        font-size: 10px;
+        opacity: 0.5;
+        font-weight: 700;
+      }
+      .thirdSection,.fourthSection{
+        display: flex;
+        height: 90vh;
+        width: 100%;
+        align-items: center;
+      }
+      .thirdTextSection,.fourthTextSection{
+        width: 50%;
+      }
+      .thirdImageSection,.fourthImageSection{
+        width: 50%;
+        text-align: center;
+      }
+      .thirdImageSection img,.fourthImageSection img{
+        width: 300px;
+      }
+      .thirdTextSection h4,.fourthTextSection h4{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+      .thirdTextSection p , .fourthTextSection p{
+        font-size: 13px;
+        width: 80%;
+        font-weight: 500;
+      }
+      .footer{
+        height: 60vh;
+       
+       
+      }
+      .footer .footer-top-bg img{
+      width: 100%;
+      }
+      .footerContainer{
+        background-color: rgba(10, 32, 34, 0.97);
+        height: 100%;
+        display: flex;
+        padding: 50px;
+        justify-content: space-around;
+      }
+     .footerContainer .leftFooter , .footerContainer .rightFooter{
+        display: flex;
+      margin-top: 40px;
+        width: 30%;
+        height: auto;
+        
+        flex-direction: column;
+        color: #fff;
+      
+      }
+    
+
+      .leftFooter p , .rightFooter .righttext{
+        font-size: 12px;
+       
+        
+        opacity: .7;
+      }
+      .leftFooter .adderss .ph , .email{
+        font-size: 12px;
+        margin: 5px 0px;
+        opacity: .7;
+        
+      }
+      
+      .leftFooter .adderss img{
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 w-100">
+      <div class="container-fluid navBar">
+        <div class="navtitle">
+          <img src="images/icon-messages.svg" alt="" />
+          <h1>Huddle</h1>
+        </div>
+        <div class="navButton">
+          <button>Try It Free</button>
+        </div>
+      </div>
+
+      <div class="container header">
+        <div class="header-contact">
+          <h3>Build The Community Your Fans Will Love</h3>
+
+          <p class="my-4">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button>Get Started For Free</button>
+        </div>
+      </div>
+
+      <div class="container headerImage p-0">
+        <img src="images/screen-mockups.svg" alt="" />
+      </div>
+
+      <div class="container SecondContain">
+        <div class="firstCompo text-center">
+          <div class="icon text-start">
+            <img src="images/icon-communities.svg" alt="" />
+          </div>
+          <div class="nums">1.4K+</div>
+          <div class="text">Communities Formed</div>
+        </div>
+        <div class="secondCompo text-center">
+            <div class="icon text-start">
+                <img src="images/icon-messages.svg" alt="" />
+              </div>
+              <div class="nums">  2.7m+ </div>
+              <div class="text">Messages Sent</div>
+        </div>
+      </div>
+
+
+      <div class="container thirdSection ">
+        <div class="thirdTextSection">
+          <h4>Grow Together</h4>
+          <p>  Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form. </p>
+
+        </div>
+        <div class="thirdImageSection">
+          <img src="images/illustration-grow-together.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="container fourthSection">
+        <div class="fourthImageSection">
+            <img src="images/illustration-flowing-conversation.svg" alt="">
+        </div>
+
+        <div class="fourthTextSection">
+          <h4>
+            Flowing Conversations
+          </h4>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+            just-in-time loading for a more natural flow.
+          </p>
+        </div>
+      </div>
+
+      <div class="container thirdSection ">
+        <div class="thirdTextSection">
+          <h4>  Your Users</h4>
+          <p>    It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+            once signed in to your app, your users can start chatting immediately. </p>
+
+        </div>
+        <div class="thirdImageSection">
+          <img src="images/illustration-your-users.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="footer container-fluid p-0">
+ <div class="footer-top-bg">
+   <img src="images/bg-footer-top-desktop.svg" alt="">
+ </div>
+ <div class="footerContainer">
+   <div class="leftFooter">
+     <div class="footerHeader">
+       <img src="images/icon-messages.svg" alt="">
+       <h1 class="text-white">Huddle</h1>
+     </div>
+     <div class="footerText">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nesciunt nam sunt, molestiae obcaecati, suscipit optio nihil recusandae quos eveniet temporibus officia similique laborum maiores reprehenderit quis aspernatur! Veritatis, culpa!</p>
+     </div>
+     <div class="adderss">
+       <div class="ph">
+         <img src="images/icon-phone.svg" alt="">
+         Phone +21212122
+       </div>
+
+       <div class="email">
+         <img src="images/icon-email.svg" alt="">
+        example12@gmail.com
+       </div>
+     </div>
+
+     
+     
+
+   </div>
+   <div class="rightFooter">
+     <h3>  Newsletter</h3>
+     <div class="righttext">
+      To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+      send you spam or pass on your email address
+     </div>
+<div class="inputAndButton mt-5">
+  <input type="text"> <button class="btn btn-primary " style="font-size: 11px;">  Subscribe</button>
+</div>
+   </div>
+
+ </div>
+      </div>
+    </div>
+  </body>
+</html>
